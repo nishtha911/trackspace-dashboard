@@ -1,0 +1,87 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: teal;
+  text-align: center;
+  font-family: "Playwrite HU", sans-serif;
+}
+
+.widget {
+  background-color: #1a1a1a;
+
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#time{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#quote-box {
+  color: blueviolet;
+  font-family: "Playwrite HU", cursive;
+}
+
+#todo input[type="text"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+#todo button {
+  padding: 8px 12px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+
+#task-list {
+  margin-top: 10px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#sgpa-tracker {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#sgpa-tracker label {
+  display: block;
+  margin: 10px 0;
+}
+
+#sgpa-tracker input {
+  padding: 5px;
+  border-radius: 4px;
+  border: none;
+  width: 100px;
+}
+
+#sgpa-tracker button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#avg-sgpa {
+  margin-top: 10px;
+  font-weight: bold;
+}

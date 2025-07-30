@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrackSpace</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="myscripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="server.js"></script>
+
+
+</head>
+<body>
+  <div class="container">
+    <h1>TrackSpace</h1>
+
+    <!-- Daily Quote -->
+    <div class="widget" id="quote-box">
+      <h2>Daily Quote</h2>
+      <p id="quote-text">Click below to get inspired!</p>
+      <button id="new-quote">New Quote</button>
+    </div>
+
+    <!-- Current Time -->
+    <div class="widget" id="clock">
+      <h2>Current Time</h2>
+      <p id="time"></p>
+    </div>
+
+    <!-- To-Do List -->
+    <div class="widget" id="todo">
+      <h2>To-Do List</h2>
+      <input type="text" id="task-input" placeholder="Enter task..." />
+      <button id="add-task">Add</button>
+      <ul id="task-list"></ul>
+    </div>
+
+    <!-- SGPA Tracker -->
+    <div class="widget" id="sgpa-tracker">
+      <h2>SGPA Tracker</h2>
+      <form id="sgpa-form">
+        <div class="semester-inputs">
+          <label>Sem 1: <input type="number" min="0" max="10" step="0.01" class="sgpa-input" /></label>
+          <label>Sem 2: <input type="number" min="0" max="10" step="0.01" class="sgpa-input" /></label>
+          <label>Sem 3: <input type="number" min="0" max="10" step="0.01" class="sgpa-input" /></label>
+          <label>Sem 4: <input type="number" min="0" max="10" step="0.01" class="sgpa-input" /></label>
+          <label>Sem 5: <input type="number" min="0" max="10" step="0.01" class="sgpa-input" /></label>
+          <label>Sem 6: <input type="number" min="0" max="10" step="0.01" class="sgpa-input" /></label>
+          <label>Sem 7: <input type="number" min="0" max="10" step="0.01" class="sgpa-input" /></label>
+          <label>Sem 8: <input type="number" min="0" max="10" step="0.01" class="sgpa-input" /></label>
+        </div>
+        <button type="submit">Calculate Average</button>
+      </form>
+      <p id="avg-sgpa">Average SGPA: —</p>
+      <canvas id="sgpa-chart" width="400" height="200"></canvas>
+    </div>
+  </div>
+
+  <!-- Chart.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Your Script -->
+  <script src="script.js"></script>
+</body>
+</html>
